@@ -1,5 +1,5 @@
 const
-  PORT = 5000,
+  PORT = 8000,
   DATABASE = 'worx',
   bodyParser = require('body-parser'),
   cors = require('cors'),
