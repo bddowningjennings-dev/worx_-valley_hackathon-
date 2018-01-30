@@ -27,7 +27,8 @@ class Form extends Component {
     document.getElementById('main-form').classList.toggle('no_margin')
   }
   handleSubmit = (event) => {
-    fetch('http://localhost:5000/tasks', {
+    // fetch('http://localhost:5000/tasks', {
+    fetch('http://18.144.16.205/tasks', {
       headers: {
         'Content-Type': 'application/json'
       },
