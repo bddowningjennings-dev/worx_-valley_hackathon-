@@ -32,7 +32,7 @@ class Search extends Component {
       tags,
       inclusive
     };
-    const URL = 'http://18.144.16.205/tasks/search?filter=';
+    const URL = '/tasks/search?filter=';
     fetch(URL + this.submitJson(query), {
       headers: {
         'Content-Type': 'application/javascript'

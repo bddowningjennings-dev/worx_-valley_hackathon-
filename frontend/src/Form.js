@@ -28,7 +28,7 @@ class Form extends Component {
   }
   handleSubmit = (event) => {
     // fetch('http://localhost:5000/tasks', {
-    fetch('http://18.144.16.205/tasks', {
+    fetch('/tasks', {
       headers: {
         'Content-Type': 'application/json'
       },

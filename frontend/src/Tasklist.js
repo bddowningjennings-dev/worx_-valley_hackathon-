@@ -32,7 +32,7 @@ class Tasklist extends Component {
     this.setState({tasks: [...tasks]})
   }
   componentWillMount() {
-    fetch('http://18.144.16.205/tasks')
+    fetch('/tasks')
     .then(res => res.json())
     .then(tasks => {
       this.setState({
