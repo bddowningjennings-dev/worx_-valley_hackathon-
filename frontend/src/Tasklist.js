@@ -31,8 +31,8 @@ class Tasklist extends Component {
   filterTasks = (tasks) => {
     this.setState({tasks: [...tasks]})
   }
-  componentWillMount() {
-    fetch('http://18.144.16.205/tasks')
+  componentDidMount() {
+    fetch('/tasks')
     .then(res => res.json())
     .then(tasks => {
       this.setState({

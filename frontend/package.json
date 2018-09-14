@@ -4,12 +4,17 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.2.0",
     "marked": "^0.3.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "^1.1.5"
   },
+  "homepage": "https://bddowningjennings-dev.github.io/worx_-valley_hackathon-",
+  "proxy": "http://localhost:8001",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -20,7 +20,7 @@ class Task extends Component {
   }
   handleDelete = (event) => {
     let id = event.target.id
-    fetch(`http://18.144.16.205/tasks/${id}`, {
+    fetch(`/tasks/${id}`, {
       method: 'delete'
     })
     .then(data => data.json())
@@ -47,7 +47,7 @@ class Task extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     let id = this.state.card._id
-    fetch(`http://18.144.16.205/tasks/${id}`, {
+    fetch(`/tasks/${id}`, {
       headers: {
         'Content-Type': 'application/json'
       },
